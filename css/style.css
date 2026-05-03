@@ -1,0 +1,32 @@
+/* ── Design Tokens ── */
+:root {
+  --white:    #FFFFFF;
+  --off-white: #F8F6F3;
+  --light:    #EDE9E4;
+  --mid:      #B8AFA6;
+  --dark:     #2C2825;
+  --accent:   #8B6F5E;
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--off-white); color: var(--dark); font-family: var(--font-body); }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ── Nav ── */
+header { padding: 1.5rem 4rem; display: flex; justify-content: center; }
+nav { width: 100%; max-width: 1100px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: var(--font-display); font-size: 1.25rem; letter-spacing: 0.05em; }
+nav ul { display: flex; gap: 2.5rem; }
+nav ul a { font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark); opacity: 0.7; transition: opacity 0.2s; }
+nav ul a:hover { opacity: 1; }
+
+/* ── Hero ── */
+.hero { min-height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem; }
+.hero h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 400; line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 1.25rem; }
+.hero p { font-size: 0.9rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 2.5rem; }
+.btn { padding: 0.85rem 2.5rem; border: 1px solid var(--dark); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; transition: all 0.25s; }
+.btn:hover { background: var(--dark); color: var(--white); }
