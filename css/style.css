@@ -77,9 +77,12 @@ section { padding: 6rem 4rem; }
 .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; max-width: 1100px; margin: 0 auto; }
 .about-photo { aspect-ratio: 4/5; overflow: hidden; }
 .about-text { display: flex; flex-direction: column; gap: 1.5rem; }
+.about-text .btn { align-self: flex-start; }
+
 .about-text h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400; }
 .about-text p { font-size: 0.95rem; line-height: 1.8; color: #5a5550; }
-.about-stats { display: flex; gap: 2.5rem; padding: 1.5rem 0; border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid); }
+.about-stats { display: flex; gap: 2.5rem; padding: 1.25rem 0; border-top: 1px solid var(--light); }
+
 .stat { display: flex; flex-direction: column; gap: 0.25rem; }
 .stat span { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; }
 .stat { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); }
@@ -169,11 +172,10 @@ nav ul a.active { opacity: 1; border-bottom: 1px solid var(--accent); padding-bo
 
 
 /* ── About Credentials ── */
-.about-credentials { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid); }
-.credential { display: grid; grid-template-columns: 110px 1fr; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid var(--light); font-size: 0.88rem; color: #5a5550; }
+.about-credentials { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--light); border-bottom: 1px solid var(--light); margin-bottom: 0.5rem; }
+.credential { display: grid; grid-template-columns: 110px 1fr; align-items: center; padding: 0.65rem 0; border-bottom: 1px solid var(--light); font-size: 0.88rem; color: #5a5550; }
 .credential:last-child { border-bottom: none; }
-.credential-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
-
+.credential-label { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
 
 /* ── Testimonials ── */
 .testimonials { background: var(--off-white); }
