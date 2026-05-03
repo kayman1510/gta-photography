@@ -3,30 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | GTA Photographer</title>
+  <title>Chatchaspell Photography | GTA Photographer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header>
     <nav>
-      <div class="logo">Your Name</div>
+      <div class="logo">Chatchaspell</div>
       <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
-      <h1>Capturing Moments<br>Across the GTA</h1>
-      <p>Portrait · Wedding · Event Photography</p>
-      <a href="#" class="btn">View Packages</a>
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?w=1600&q=80" alt="Hero">
+      </div>
+      <div class="hero-content">
+        <span class="label">GTA Photography</span>
+        <h1>Capturing Moments<br>That Last Forever</h1>
+        <p>Portrait · Wedding · Event Photography</p>
+        <a href="#services" class="btn btn-light">View Packages</a>
+      </div>
     </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="section-header">
+        <span class="label">Work</span>
+        <h2>Selected Portfolio</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" alt="Portrait">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" alt="Wedding">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=80" alt="Portrait">
+        </div>
+        <div class="gallery-item wide">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1200&q=80" alt="Event">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&q=80" alt="Family">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="section-header">
+        <span class="label">Packages</span>
+        <h2>Photography Services</h2>
+        <p>Serving Toronto, Mississauga, Brampton, Oakville & the GTA</p>
+      </div>
+      <div class="packages-grid">
+
+        <div class="package-card">
+          <div class="package-top">
+            <h3>Essential</h3>
+            <div class="price">$350</div>
+          </div>
+          <p class="package-desc">Perfect for portraits, headshots, and personal branding sessions.</p>
+          <ul class="package-features">
+            <li>2-hour session</li>
+            <li>1 location (GTA)</li>
+            <li>30 edited photos</li>
+            <li>Online gallery</li>
+            <li>14-day delivery</li>
+          </ul>
+          <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+        <div class="package-card featured">
+          <div class="package-badge">Most Popular</div>
+          <div class="package-top">
+            <h3>Premium</h3>
+            <div class="price">$750</div>
+          </div>
+          <p class="package-desc">Ideal for engagements, family sessions, and small events.</p>
+          <ul class="package-features">
+            <li>4-hour session</li>
+            <li>2 locations (GTA)</li>
+            <li>75 edited photos</li>
+            <li>Online gallery</li>
+            <li>7-day delivery</li>
+            <li>Print release included</li>
+          </ul>
+          <a href="#contact" class="btn btn-light">Book Now</a>
+        </div>
+
+        <div class="package-card">
+          <div class="package-top">
+            <h3>Full Day</h3>
+            <div class="price">$1,400</div>
+          </div>
+          <p class="package-desc">Full coverage for weddings, corporate events, and large productions.</p>
+          <ul class="package-features">
+            <li>8-hour session</li>
+            <li>Unlimited locations</li>
+            <li>200+ edited photos</li>
+            <li>Online gallery</li>
+            <li>5-day delivery</li>
+            <li>Print release included</li>
+            <li>Second shooter available</li>
+          </ul>
+          <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="about-photo">
+          <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80" alt="Photographer">
+        </div>
+        <div class="about-text">
+          <span class="label">About</span>
+          <h2>Chatchaspell Photography</h2>
+          <p>Based in Mississauga, I photograph people and moments across the Greater Toronto Area. My style is clean, natural, and timeless — focused on real moments over posed perfection.</p>
+          <p>Whether it's a wedding in Toronto, a portrait session in Oakville, or a corporate event in Markham, I bring the same care and attention to every shoot.</p>
+          <div class="about-stats">
+            <div class="stat"><span>150+</span>Sessions</div>
+            <div class="stat"><span>5+</span>Years</div>
+            <div class="stat"><span>GTA</span>Coverage</div>
+          </div>
+          <a href="#contact" class="btn">Work With Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <span class="label">Get In Touch</span>
+        <h2>Book a Session</h2>
+        <p>Fill out the form and I'll get back to you within 24 hours.</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" placeholder="Phone Number">
+          <select>
+            <option value="" disabled selected>Select Package</option>
+            <option>Essential — $350</option>
+            <option>Premium — $750</option>
+            <option>Full Day — $1,400</option>
+            <option>Custom / Not Sure</option>
+          </select>
+        </div>
+        <textarea placeholder="Tell me about your shoot — date, location, vision..." rows="5"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
   </main>
 
+  <footer>
+    <p>© 2026 Chatchaspell Photography · Mississauga, ON · Serving the GTA</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
