@@ -32,7 +32,7 @@ section { padding: 6rem 4rem; }
 .section-header h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 400; margin-top: 0.5rem; }
 .section-header p { color: var(--mid); margin-top: 1rem; font-size: 0.95rem; }
 
-.btn { display: inline-block; padding: 0.85rem 2.5rem; border: 1px solid var(--dark); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; transition: all 0.25s; cursor: pointer; background: transparent; font-family: var(--font-body); }
+.btn { display: inline-block; padding: 0.85rem 2.5rem; border: 1px solid var(--dark); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; transition: all 0.25s; cursor: pointer; background: transparent; font-family: var(--font-body); color: var(--dark); -webkit-appearance: none; border-radius: 0; }
 .btn:hover { background: var(--dark); color: var(--white); }
 .btn-light { border-color: var(--white); color: var(--white); }
 .btn-light:hover { background: var(--white); color: var(--dark); }
